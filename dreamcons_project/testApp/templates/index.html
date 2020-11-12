@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <h1>Displaying Person</h1>
+        {% for obj in persons  %}
+            <h4>{{obj.name}}</h4>
+        {% endfor %}
+        <h1>Displaying Groups</h1>
+        {% for obj in groups  %}
+            <h4>{{obj.name}}</h4>
+        {% endfor %}
+        <h1>Displaying Membership Info</h1>
+        {% for obj in members  %}
+            <h4>{{obj.invite_reason}}</h4>
+        {% endfor %}
+        <h1>Now Actual Programming</h1>
+        {% for person in Persons %}
+            {% for member in members %}
+                <h4>{{person.name}} id added in </h4>
+            {% endfor %}
+        {% endfor %}
+    </body>
+</html>
